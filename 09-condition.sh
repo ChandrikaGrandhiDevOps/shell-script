@@ -6,5 +6,5 @@ if [ $NUMBER -gt 100 ]
 then 
    echo "statment is true"
 else 
-   echo "statement false'
+   echo "statement false"
 fi
