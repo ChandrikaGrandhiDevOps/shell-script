@@ -2,7 +2,7 @@
 
 FRUITS=("Apple" "Banana" "Mango")
 
-echo $#FRUITS
+echo ${#FRUITS[@]}
 echo "First value is: ${FRUITS[0]}"
 
 echo "Second value is: ${FRUITS[1]}"
