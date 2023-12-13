@@ -6,5 +6,5 @@ if [ $ID -ne 0 ]
 
 then
     echo "ERROR: please run eith root"
-elese
+else
     echo "u r root"    
