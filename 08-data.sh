@@ -8,4 +8,4 @@ echo "Second value is: ${FRUITS[1]}"
 
 echo "Popular fruits is ${FRUITS[2]}"
 
-echo "All fruits is: ${FRUITS}"
+echo "All fruits is: ${FRUITS[@]}"
