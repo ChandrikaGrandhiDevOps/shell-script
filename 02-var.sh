@@ -1,7 +1,7 @@
 #!/bin/bash
 
-A=ramesh
-B=suresh
+A=hari
+B=ravi
 echo "$A: hi $B gm"
 echo "$B: hi $A hi"
 echo "$A: how are you doing $B"
