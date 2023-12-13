@@ -16,4 +16,5 @@ then
    echo "Error: please run with root acces"
 else
    echo "run"
-fi      
+fi   
+yum install mysql -y   
