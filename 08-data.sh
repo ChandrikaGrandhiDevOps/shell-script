@@ -6,3 +6,4 @@ echo "First value is: ${FRUITS[0]}"
 
 echo "Second value is: ${FRUITS[1]}"
 
+echo "Popular fruits is ${FRUITS[2]}"
