@@ -9,7 +9,7 @@ then
 else
     echo "Sucess"
 fi 
-yum install mysql -y   
+yum install myssql -y   
 
 if [ $ID -ne 0 ]
 then
