@@ -21,7 +21,7 @@ then
     echo "ERROR:: FAILED"
     
 else
-    echo -e "$Y i was sucessfully installed"
+    echo "i was sucessfully installed"
 fi
 yum install git -y &>> $LOGFILE
 VALIDATE  $? "git"
