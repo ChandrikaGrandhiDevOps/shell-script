@@ -17,4 +17,14 @@ then
     exit 2
 else
     echo "mysql sucessfully installled"
+fi   
+
+yum install git -y
+ 
+if [ $? -ne 0 ]
+then 
+    echo "ERROR: failed dto install git"
+    exit 2
+else 
+    echo "suceesfully installed git"
 fi        
