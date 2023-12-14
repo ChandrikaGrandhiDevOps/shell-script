@@ -11,14 +11,6 @@ else
 fi      
 
 ID=$(id -u)
-if [ $ID -ne 0 ]
-then
-   echo "Error: please run with root acces"
-   exit 1
-else
-   echo "run"
-fi   
-yum install git -y
 
 if [ $? -ne 0 ]
 then
