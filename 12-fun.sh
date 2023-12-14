@@ -5,6 +5,14 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
+
+TIMESTAMP=$(date +%F-%H-%M-%S)
+
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
+echo "$0"
+echo "script strated exicuting at $TIMESTAMP" >>& $LOGFILE
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -24,7 +32,7 @@ fi
 
 for package in $@
 do
- yum list installed $package
+ yum list installed $package >>& $LOGFILE
  if [ $? -ne 0 ]
   then
     yum install $package -y
