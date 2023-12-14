@@ -20,7 +20,7 @@ else
 fi   
 yum install mysqll -y
 
-if [ $? -lt 0 ]
+if [ $? -ne 0 ]
 then
     echo "ERROR:installing MYSQL is failed"
     exit 1
