@@ -24,7 +24,7 @@ VALIDATE(){
 } 
 if [ $ID -ne 0 ]
 then
-    echo "ERROR:: FAILED"
+    echo "ERROR:: FAILED" &>> $LOGFILE
     exit 1
 else
     echo -e "$G Exicuted"   
@@ -36,7 +36,7 @@ do
  if [ $? -ne 0 ]
   then
     yum install $package -y
-    VALIDATE $? "installlation of $package"
+    VALIDATE $? "installlation of $package" &>> $LOGFILE
   else
     echo -e " $Y already existed" 
   fi   
