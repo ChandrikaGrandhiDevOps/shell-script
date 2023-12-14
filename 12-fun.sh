@@ -22,9 +22,10 @@ for package in $@
 do
  yum list installed $package
  if [ $? -ne 0 ]
- then
+  then
     yum install $package -y
     VALIDATE $? "installlation of $package"
-else
-    echo "already existed"    
+  else
+    echo "already existed" 
+  fi   
 done
