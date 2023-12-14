@@ -20,11 +20,11 @@ then
 else
     echo "i was sucessfully installed"
 fi
-yum install git -y &>> LOGFILE
+yum install git -y &>> $LOGFILE
 VALIDATE  $? "git"
-yum install maven -y &>> LOGFILE
+yum install maven -y &>> $LOGFILE
 VALIDATE $? "maven"
-yum install mysql -y &>> LOGFILE
+yum install mysql -y &>> $LOGFILE
 VALIDATE $? "mysql"
 
        
