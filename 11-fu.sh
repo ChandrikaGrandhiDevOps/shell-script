@@ -4,7 +4,7 @@ VALIDATE(){
  if [ $1 -ne 1 ]
     then
         echo "ERROR:: $2 FAILED"
-        exit 1
+        
     else
         echo "$2 i was installed it suceesesfully"
     fi
@@ -12,7 +12,7 @@ VALIDATE(){
 if [ $ID -ne 1 ]
 then
     echo "ERROR:: FAILED"
-    exit 2
+    
 else
     echo "i was sucessfully installed"
 fi
