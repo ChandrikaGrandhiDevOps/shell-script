@@ -1,15 +1,14 @@
 #!/bin/bash
 ID=$(id -u)
-VALIDATE {
+VALIDATE() {
  if [ $1 -ne 0 ]
     then
         echo "ERROR:: $2 FAILED"
         exit 1
     else
         echo " $2 i was installed it suceesesfully"
-    fi 
+    fi
 }
-
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: FAILED"
