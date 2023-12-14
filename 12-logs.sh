@@ -13,7 +13,7 @@ VALIDATE(){
         echo -e "$R ERROR:: $2 FAILED"
         
     else
-        echo -e "$G  $2 i was installed it suceesesfully"
+        echo -e "$G  $2 i was installed $y it suceesesfully"
     fi
 }
 if [ $ID -ne 0 ]
