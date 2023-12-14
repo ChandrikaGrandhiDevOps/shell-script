@@ -1,14 +1,15 @@
 #!/bin/bash
 
 ID=$(id -u)
-VALIDATE() [
-    if [ $? -ne 0 ]
+VALIDATE(){
+    if [ $1 -ne 0 ]
     then
-       echo "Error:: failed"
+       echo " $2 Error:: failed"
        exit 1
     else
-        echo "suceesed"   
-]
+        echo "$2 suceesed"  
+    fi     
+}
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: FAILED"
