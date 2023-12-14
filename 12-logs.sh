@@ -8,6 +8,8 @@ Y="\e[33m"
 N="\e[0m"
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
+echo "Script started executing at $TIMESTAMP" &>> $LOGFILE
+
 VALIDATE(){
  if [ $1 -ne 1 ]
     then
