@@ -18,10 +18,10 @@ VALIDATE(){
 }
 if [ $ID -ne 0 ]
 then
-    echo "ERROR:: FAILED"
+    echo -e "$R ERROR:: FAILED"
     
 else
-    echo "i was sucessfully installed"
+    echo -e "$R i was sucessfully installed"
 fi
 yum install git -y &>> $LOGFILE
 VALIDATE  $? "git"
