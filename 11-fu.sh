@@ -21,6 +21,6 @@ VALIDATE  $? "git"
 yum install maven -y
 VALIDATE $? "maven"
 yum install mysql -y
-VALIDATE $? "mysql
+VALIDATE $? "mysql"
 
        
