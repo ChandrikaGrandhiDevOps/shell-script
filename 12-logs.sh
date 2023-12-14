@@ -5,6 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+N="\e[0m"
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
@@ -13,7 +14,7 @@ VALIDATE(){
         echo -e "$R ERROR:: $2 FAILED"
         
     else
-        echo -e "$G  $2 i was installed $y it suceesesfully"
+        echo -e "$G  $2 i was installed it suceesesfully $N"
     fi
 }
 if [ $ID -ne 0 ]
