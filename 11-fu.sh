@@ -1,12 +1,12 @@
 #!/bin/bash
 ID=$(id -u)
 VALIDATE {
- if [ $? -ne 0 ]
+ if [ $1 -ne 0 ]
     then
-    echo "ERROR:: FAILED"
-    exit 1
+        echo "ERROR:: $2 FAILED"
+        exit 1
     else
-    echo "i was installed it suceesesfully"
+        echo " $2 i was installed it suceesesfully"
     fi 
 }
 
@@ -18,6 +18,6 @@ else
     echo "i was sucessfully installed"
 fi
 yum install git -y
-VALIDATE 
+VALIDATE  $? "git
 
        
