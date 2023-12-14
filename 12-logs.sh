@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
- if [ $1 -ne 1 ]
+ if [ $1 -ne 0 ]
     then
         echo "ERROR:: $2 FAILED"
         
@@ -13,7 +13,7 @@ VALIDATE(){
         echo "$2 i was installed it suceesesfully"
     fi
 }
-if [ $ID -ne 1 ]
+if [ $ID -ne 0 ]
 then
     echo "ERROR:: FAILED"
     
