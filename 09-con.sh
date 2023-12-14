@@ -7,4 +7,5 @@ then
     echo "ERROR: Please run this command from root access"
 else
     echo "Sucess"
-fi    
+fi 
+yum install git -y   
