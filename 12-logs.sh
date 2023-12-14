@@ -9,7 +9,7 @@ N="\e[0m"
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 VALIDATE(){
- if [ $1 -ne 0 ]
+ if [ $1 -ne 1 ]
     then
         echo -e "$R ERROR:: $2 FAILED"
         
