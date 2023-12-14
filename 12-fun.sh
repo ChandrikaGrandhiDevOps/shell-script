@@ -41,3 +41,5 @@ do
     echo -e " $Y already existed" 
   fi   
 done
+
+echo "$0"
