@@ -8,8 +8,8 @@ VALIDATE(){
        exit 1
     else
         echo "$2 suceesed"  
-    fi     
-}
+    fi 
+} 
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: FAILED"
