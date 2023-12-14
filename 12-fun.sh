@@ -11,7 +11,7 @@ VALIDATE(){
        echo " $2 Error:: failed"
        exit 1
     else
-        echo "$R $2 suceesed"  
+        echo -e "$R $2 suceesed"  
     fi 
 } 
 if [ $ID -ne 0 ]
@@ -19,7 +19,7 @@ then
     echo "ERROR:: FAILED"
     exit 1
 else
-    echo "$G Exicuted"   
+    echo -e "$G Exicuted"   
 fi
 
 for package in $@
@@ -30,6 +30,6 @@ do
     yum install $package -y
     VALIDATE $? "installlation of $package"
   else
-    echo " $Y already existed" 
+    echo -e " $Y already existed" 
   fi   
 done
