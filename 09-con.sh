@@ -10,3 +10,11 @@ else
     echo "Sucess"
 fi 
 yum install git -y   
+
+if [ $ID -ne 0 ]
+then
+    echo "ERROR:git installation failed"
+    exit 1
+else
+    echo "git sucessfully installled"
+fi        
