@@ -3,10 +3,10 @@ ID=$(id -u)
 VALIDATE(){
 if [ $ID -ne 0 ]
 then
-    echo "ERROR: installing mysql fail"
+    echo "ERROR: installing fail"
     exit 1
 else
-    echo "mysql success"
+    echo "success"
 fi
 }
 
@@ -18,3 +18,5 @@ else
     echo "you are root user"
 fi 
 yum install mysql -y
+
+VALIDATE
