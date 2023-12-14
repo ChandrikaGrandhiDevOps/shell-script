@@ -18,12 +18,12 @@ then
 else
    echo "run"
 fi   
-yum install mysqll -y
+yum install git -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR:installing MYSQL is failed"
+    echo "ERROR:installing git is failed"
     exit 1
 else
-    echo "installing mysql is sucesses"
+    echo "installing git is sucesses"
 fi        
