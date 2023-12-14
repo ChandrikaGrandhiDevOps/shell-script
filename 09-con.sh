@@ -9,12 +9,12 @@ then
 else
     echo "Sucess"
 fi 
-yum install git -y   
+yum install mysql -y   
 
 if [ $ID -ne 0 ]
 then
-    echo "ERROR:git installation failed"
+    echo "ERROR:mysql installation failed"
     exit 1
 else
-    echo "git sucessfully installled"
+    echo "mysql sucessfully installled"
 fi        
