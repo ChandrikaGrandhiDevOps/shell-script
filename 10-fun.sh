@@ -25,3 +25,6 @@ yum install git -y
 
 VALIDATE $? "git"
 
+yum install docker -y
+ 
+VALIDATE $? "maven"
