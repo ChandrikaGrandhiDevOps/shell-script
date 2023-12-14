@@ -18,9 +18,9 @@ then
 else
    echo "run"
 fi   
-yum install mysql -y
+yum install mysqll -y
 
-if [ $? -ne 0 ]
+if [ $? -e 0 ]
 then
     echo "ERROR:installing MYSQL is failed"
     exit 1
