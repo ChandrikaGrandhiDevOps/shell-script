@@ -23,7 +23,7 @@ do
 done
 
 #if [ -z "$NAME" ]|[ -z "$WISHES" ]; then
-if [ -z "$NAME" ]
+if [ -z "$NAME" ];
     echo "ERROR: BOTH -n & -w are mandatory"
     USAGE
     exit 1
