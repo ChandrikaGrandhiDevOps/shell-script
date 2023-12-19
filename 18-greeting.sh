@@ -29,4 +29,4 @@ if [ -z "$NAME" ]; then
     exit 1
 fi    
 
-echo "HELLO $NAME $WISHES good morning"
+echo "HELLO $NAME $WISHES how are u?"
