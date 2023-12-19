@@ -9,9 +9,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ ! -d SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then
-    echo -e "$R Source directory: $SOURCE_DIR doesn't exists.$N"
+    echo -e "$G Source directory: $SOURCE_DIR doesn't exists.$N"
 fi
 FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log")
 
