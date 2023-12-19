@@ -11,7 +11,8 @@ USAGE(){
     
 }
 
-while getopts ":n:w:h" opt; do
+while getopts ":n:w:h" opt;
+do
     case $opt in 
          n) NAME="$OPTARG";;
          w) WISHES="$OPTARG";;
@@ -20,3 +21,11 @@ while getopts ":n:w:h" opt; do
          h|*) USAGE; exit;;
     esac      
 done
+
+if [ -z "$NAME" ]|[ -z "$WISHES" ]; then
+    echo "ERROR: BOTH -n & -w are mandatory"
+    USAGE
+    exit 1
+fi    
+
+echo "HELLO $NAME $WISHES good morning"
