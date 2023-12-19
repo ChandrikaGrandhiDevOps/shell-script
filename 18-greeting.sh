@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-WISHES=""
+WISHES="Good evening"
 USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
     echo "Options::"
@@ -24,7 +24,7 @@ done
 
 #if [ -z "$NAME" ]|[ -z "$WISHES" ]; then
 if [ -z "$NAME" ]; then
-    echo "ERROR: BOTH -n & -w are mandatory"
+    echo "ERROR: -n  are mandatory."
     USAGE
     exit 1
 fi    
