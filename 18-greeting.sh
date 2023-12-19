@@ -8,7 +8,7 @@ USAGE(){
     echo "-n, Specify the name (mandatory)"
     echo "-w, Specify the wishes (gm,gn,hru)"
     echo "-h, Display help"
-    echo "\?, Invalid option"
+    
 }
 
 while getopts ":n:w:h" opt; do
