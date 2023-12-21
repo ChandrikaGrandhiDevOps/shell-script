@@ -1,0 +1,16 @@
+{
+    "name": "sivakumar",
+    "dob": "12-9-1999",
+    "Address": [
+          {
+        "Address-line1": "nuthalapadu",
+        "Address-line2": "parchur",
+        "Address-line3": "AP",
+           },
+     {
+        "Address-line1": "nuthalapadu1",
+        "Address-line2": "parchur1",
+        "Address-line3": "A1P",
+     }]
+
+}

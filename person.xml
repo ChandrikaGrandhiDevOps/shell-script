@@ -1,0 +1,25 @@
+<person>
+
+          <name>
+                 <First-name> </first-name>
+                 <Middlename> </Middlename>
+                 <lastname> </lastname>
+          </name>
+
+          <DOB> 2000 </DOB>
+
+          <Address>
+              <Home-Address>
+                        <Address-line1> nuthalapadu  </Address-line1>
+                        <Address-line2>  parchoor </Address-line2>
+                        <Address-line3>  AP  </Address-line3>
+              </Home-Address>
+
+              <Office-Address>
+                         <Address-line1> kansas</Address-line1>
+                         <Address-line2> Overland park </Address-line2>
+                         <Address-line3> unites states </Address-line3>
+              </Office-Address>
+          </Address>
+
+</person>

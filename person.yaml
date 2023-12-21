@@ -1,0 +1,18 @@
+- name: chandu
+  dob: 2000-jul-23
+  address: 
+    address-line1: nuthalapadu
+    adress-line1: parchur
+    State: AP
+  gamil: chandy@gmail.com
+- name: gopi
+  dob: 1999-nov-17
+  address:
+  - address-line1: nuthalapadu2
+    adress-line1: parchur2
+    State: AP2
+  - address-line1: nuthalapadu1
+    adress-line1: parchur1
+    State: AP1  
+  email: vhand@gmail.com  
+
