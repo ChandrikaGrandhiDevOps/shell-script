@@ -8,6 +8,3 @@ then
 fi
    number_of_lines= wc -l $FILE
    number_of_words= wc -w $FILE
-
-   echo -e "$G No.of lines in this file is: wc -l"
-   echo -e "$Y No.of lines in this file is: wc -w"
